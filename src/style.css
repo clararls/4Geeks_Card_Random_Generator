@@ -2,3 +2,10 @@
 body {
   background-color: green;
 }
+.card {
+  height: 350 px;
+  width: 250;
+}
+.bottom {
+  transform: rotate(180deg);
+}

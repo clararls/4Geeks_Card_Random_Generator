@@ -17,7 +17,7 @@ window.onload = function() {
 };
 let suits = ["♦", "♥", "♠", "♣"];
 
-if (random(suits) === 1 || random(suits) === 2) {
+if (random(suits) === 0 || random(suits) === 1) {
   var suit = "<p style ='color:red'>" + suits[random(suits)] + "</p>";
 } else {
   var suit = "<p style ='color:black'>" + suits[random(suits)] + "</p>";
