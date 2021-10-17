@@ -16,11 +16,16 @@ window.onload = function() {
   //document.querySelector(".card").innerHTML = cardGenerate() + suitRandom();
 };
 let suits = ["♦", "♥", "♠", "♣"];
+let randomSuit = Math.floor(Math.random() * (3 - 0 + 1));
 
-if (random(suits) == 0 || random(suits) == 1) {
-  var suit = "<p style ='color:red'>" + suits[random(suits)] + "</p>";
+if (randomSuit == 0) {
+  var suit = "<p style ='color:red'>" + suits[randomSuit] + "</p>";
+} else if (randomSuit == 1) {
+  var suit = "<p style ='color:red'>" + suits[randomSuit] + "</p>";
+} else if (randomSuit == 2) {
+  var suit = "<p style ='color:black'>" + suits[randomSuit] + "</p>";
 } else {
-  var suit = "<p style ='color:black'>" + suits[random(suits)] + "</p>";
+  var suit = "<p style ='color:black'>" + suits[randomSuit] + "</p>";
 }
 
 function numRandom() {
